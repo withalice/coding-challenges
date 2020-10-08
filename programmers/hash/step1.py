@@ -12,7 +12,7 @@ def my_solution(participants, completions):
             participants_map.update({completion: -1})
             if participants_map.get(completion) == 0:
                 participants_map.pop(completion)
-    return "".join(participants_map.keys())
+    return list(participants_map.keys()).pop()
 
 
 def short_solution(participants, completions):
